@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Orbital Syndicate{% endblock %}</title>
+    
+    <link rel="stylesheet" href="{% static 'style/base.css' %}">
+    
+    {% block extra_head %}{% endblock %}
+</head>
+<body class="bg-dark text-light">
+    <header class="navbar">
+        <nav class="container">
+            <div class="logo">
+                <a href="{% url 'home' %}">ORBITAL SYNDICATE</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Games</a></li>
+                <li><a href="#">Devlog</a></li>
+                <li><a href="#">Manifesto</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="content-wrapper">
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <p>&copy; 2026 Orbital Syndicate. All systems operational.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
