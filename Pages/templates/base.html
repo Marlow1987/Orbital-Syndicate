@@ -7,8 +7,10 @@
     <title>{% block title %}Orbital Syndicate{% endblock %}</title>
     
     <link rel="stylesheet" href="{% static 'style/base.css' %}">
-    
-    {% block extra_head %}{% endblock %}
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'images/32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'images/16x16.png' %}">
+    <link rel="icon" type="image/png" sizes="48x48" href="{% static 'images/48x48.png' %}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'images/180x180.png' %}">
 </head>
 <body class="bg-dark text-light">
     <header class="navbar">
