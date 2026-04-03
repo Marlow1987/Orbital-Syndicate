@@ -39,11 +39,10 @@ body {
 /* --- Header & Navigation --- */
 
 .navbar {
-    background-color: rgba(22, 24, 29, 0.95);
+    background-color: black;
     border-bottom: 1px solid var(--border-color);
-    padding: 1rem 0;
     position: sticky;
-    top: 0;
+    top: 5px;
     z-index: 1000;
     backdrop-filter: blur(10px);
 }
